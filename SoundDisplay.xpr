@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/anshe/Downloads/DisplaytheSoundsV1.xpr/SoundDisplay/SoundDisplay.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="aff73d7914164eb5b34d931897856647"/>

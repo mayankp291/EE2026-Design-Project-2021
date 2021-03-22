@@ -22,8 +22,9 @@
 
 module Volume_left_right(
     input clk381hz,
-    input btnL,
-    input btnR,
+    input btnL_press,
+    input btnR_press,
+    input btnC_press,
     
     output reg [10:0] btnL_count,
     output reg [10:0] btnR_count
@@ -34,16 +35,15 @@ module Volume_left_right(
         btnR_count = 0;
     end
     
-    wire btnL_press, btnR_press;
-    single_pulse_circuit f1(clk381hz, btnL, btnL_press);
-    single_pulse_circuit f2(clk381hz, btnR, btnR_press);
-    
     always @(posedge clk381hz) begin
-        if(btnL_press == 1)
+        if(btnL_press == 1 && (btnL_count >= btnR_count || (btnL_count - btnR_count <= 36)))
             btnL_count <= btnL_count + 1;
-        else if(btnR_press == 1)
+        else if(btnR_press == 1 && (btnR_count >= btnL_count || (btnR_count - btnL_count <= 36)))
             btnR_count <= btnR_count + 1;       
-                
-                ////for not out of bounds (btnL_count - btnR_count != ???)     
+        
+        if(btnC_press == 1) begin
+            btnL_count = 0;
+            btnR_count = 0;        
+        end    
     end    
 endmodule
