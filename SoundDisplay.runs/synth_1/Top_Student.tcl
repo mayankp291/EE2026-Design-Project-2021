@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -33,6 +34,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/anshe/Downloads/DisplaytheSoundsV1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v
   C:/Users/anshe/Downloads/DisplaytheSoundsV1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v
   C:/Users/anshe/Downloads/DisplaytheSoundsV1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_Indicator.v
+  C:/Users/anshe/Downloads/DisplaytheSoundsV1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_left_right.v
   C:/Users/anshe/Downloads/DisplaytheSoundsV1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_custom.v
   C:/Users/anshe/Downloads/DisplaytheSoundsV1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/convert_to_coordinate.v
   C:/Users/anshe/Downloads/DisplaytheSoundsV1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/dff.v

@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/anshe/Downloads/DisplaytheSoundsV1.xpr/SoundDisplay/SoundDisplay.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="aa30a58caa1d49f8837fa06e39319998"/>
+    <Option Name="Id" Val="aff73d7914164eb5b34d931897856647"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -61,7 +61,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/Audio_Capture.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v"/>
           <Attr Name="ImportTime" Val="1570395503"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -70,8 +70,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Display_Menu.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../SoundDisplay.srcs/sources_1/new/Display_Menu.v"/>
-          <Attr Name="ImportTime" Val="1616419186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -79,7 +77,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Oled_Display.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v"/>
           <Attr Name="ImportTime" Val="1570395512"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -88,8 +86,15 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Volume_Indicator.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_Indicator.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_Indicator.v"/>
           <Attr Name="ImportTime" Val="1616403017"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Volume_left_right.v">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -97,7 +102,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/clk_custom.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_custom.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_custom.v"/>
           <Attr Name="ImportTime" Val="1615258865"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -106,7 +111,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/convert_to_coordinate.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/convert_to_coordinate.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/convert_to_coordinate.v"/>
           <Attr Name="ImportTime" Val="1616232861"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -115,7 +120,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/dff.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/dff.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/dff.v"/>
           <Attr Name="ImportTime" Val="1615258184"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -124,7 +129,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/display_volume.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/display_volume.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/display_volume.v"/>
           <Attr Name="ImportTime" Val="1616406515"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -133,7 +138,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/single_pulse_circuit.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse_circuit.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse_circuit.v"/>
           <Attr Name="ImportTime" Val="1615261566"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -142,17 +147,11 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Top_Student.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v"/>
           <Attr Name="ImportTime" Val="1570395690"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/SoundDisplay/archive_project_summary.txt">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../archive_project_summary.txt"/>
-          <Attr Name="ImportTime" Val="1616414477"/>
         </FileInfo>
       </File>
       <File Path="$PPRDIR/archive_project_summary.txt"/>
@@ -166,7 +165,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/new/Basys3_Master.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc"/>
           <Attr Name="ImportTime" Val="1570394606"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

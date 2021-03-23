@@ -32,6 +32,7 @@ module Top_Student (
     output [7:0] JC
     );
     
+    reg [3:0] flag = 0;
 
     reg clk_freq625 = 32'd7;
     reg clk_freq381 = 32'd131233;
@@ -56,27 +57,29 @@ module Top_Student (
     assign led = volume;
     //map to led
     
-    reg [10:0] btnL_count = 0, btnR_count = 0;
+    wire [10:0] btnL_count, btnR_count;
     wire [15:0] oled_data;
     wire [15:0] oled_data_volume;
     wire [15:0] oled_data_menu;
     assign oled_data = (sw[1] == 1) ? oled_data_volume : oled_data_menu;
     
     wire reset;
-    wire btnL_press, btnR_press;
+//    wire btnL_press, btnR_press;
     single_pulse_circuit f2(clk381hz, btnC, reset);
-    single_pulse_circuit f3(clk381hz, btnL, btnL_press);
-    single_pulse_circuit f4(clk381hz, btnR, btnR_press);
+//    single_pulse_circuit f3(clk381hz, btnL, btnL_press);
+//    single_pulse_circuit f4(clk381hz, btnR, btnR_press);
     //single pulse
+    
+    Volume_left_right f9 (clk381hz, btnL, btnR, btnL_count, btnR_count);
     
     wire [6:0] x;
     wire [5:0] y;
     wire [12:0] pixel_index;
-    convert_to_coordinate f6 (pixel_index, x, y);
-    //
+    convert_to_coordinate f5 (pixel_index, x, y);
+    
     
     wire A, B, C, E;
-    Oled_Display f5 (clk6p25m, reset, A, B, C, pixel_index, oled_data, JC[0], JC[1], JC[3], JC[4], JC[5], JC[6], JC[7], E);
+    Oled_Display f6 (clk6p25m, reset, A, B, C, pixel_index, oled_data, JC[0], JC[1], JC[3], JC[4], JC[5], JC[6], JC[7], E);
     //converts pixel_index to cartesian coordinates (0 - 63, 0 - 95)
                               
     display_volume f7 (clk6p25m, x, y, btnL_count, btnR_count, volume, sw[0], oled_data_volume);                               
@@ -84,15 +87,23 @@ module Top_Student (
     
     Display_Menu f8 (clk6p25m, x , y, oled_data_menu);
     
-    //counts btn presses   
-    always @(posedge clk381hz) begin
-        if(btnL_press == 1)
-            btnL_count <= btnL_count + 1;
-        else if(btnR_press == 1)
-            btnR_count <= btnR_count + 1;       
+//    //counts btn presses   
+//    always @(posedge clk381hz) begin
+//        if(btnL_press == 1)
+//            btnL_count <= btnL_count + 1;
+//        else if(btnR_press == 1)
+//            btnR_count <= btnR_count + 1;       
             
-            ////for not out of bounds (btnL_count - btnR_count != ???)     
-    end    
+//            ////for not out of bounds (btnL_count - btnR_count != ???)     
+//    end    
         
+    
+//        always @(posedge CLK100MHZ)
+//        begin
+//        oled_data[10:5] = mic_in[11:6];
+//        end
+//        wire [11:0] zero_signal;
+//        assign zero_signal = 12'b0; 
+//        assign led = (sw[0] == 1) ? mic_in : zero_signal;
     
 endmodule
