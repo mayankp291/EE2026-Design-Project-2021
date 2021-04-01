@@ -31,15 +31,14 @@ set_property ip_output_repo {c:/Users/mayan/OneDrive - National University of Si
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v}
-  {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v}
   {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v}
-  {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_Indicator.v}
-  {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_left_right.v}
   {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_custom.v}
   {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/convert_to_coordinate.v}
   {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/dff.v}
-  {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/display_volume.v}
+  {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v}
   {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse_circuit.v}
+  {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v}
+  {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_signal.v}
   {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being

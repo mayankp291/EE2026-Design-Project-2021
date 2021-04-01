@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Mar 23 03:12:45 2021
-# Process ID: 13104
+# Start of session at: Fri Apr  2 03:05:10 2021
+# Process ID: 2424
 # Current directory: C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.runs/synth_1
 # Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
 # Log file: C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.vds
@@ -15,27 +15,141 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6584 
+INFO: Helper process launched with PID 11872 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 356.031 ; gain = 98.895
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 357.145 ; gain = 100.387
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
 INFO: [Synth 8-6157] synthesizing module 'clk_custom' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_custom.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'clk_custom' (1#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_custom.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
 INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (2#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
-INFO: [Synth 8-6157] synthesizing module 'Volume_Indicator' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_Indicator.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Volume_Indicator' (3#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_Indicator.v:23]
 INFO: [Synth 8-6157] synthesizing module 'single_pulse_circuit' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse_circuit.v:23]
 INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/dff.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'dff' (4#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/dff.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'single_pulse_circuit' (5#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse_circuit.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Volume_left_right' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_left_right.v:23]
-WARNING: [Synth 8-6090] variable 'btnL_count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_left_right.v:45]
-WARNING: [Synth 8-6090] variable 'btnR_count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_left_right.v:46]
-INFO: [Synth 8-6155] done synthesizing module 'Volume_left_right' (6#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Volume_left_right.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (3#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse_circuit' (4#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse_circuit.v:23]
 INFO: [Synth 8-6157] synthesizing module 'convert_to_coordinate' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/convert_to_coordinate.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'convert_to_coordinate' (7#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/convert_to_coordinate.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'convert_to_coordinate' (5#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/convert_to_coordinate.v:25]
+INFO: [Synth 8-6157] synthesizing module 'snake_signal' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_signal.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'snake_signal' (6#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_signal.v:23]
+INFO: [Synth 8-6157] synthesizing module 'snake_game' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:23]
+INFO: [Synth 8-6157] synthesizing module 'random_coor' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:23]
+INFO: [Synth 8-4471] merging register 'listY_reg[1][6:0]' into 'listX_reg[9][6:0]' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+INFO: [Synth 8-4471] merging register 'listY_reg[2][6:0]' into 'listX_reg[8][6:0]' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+INFO: [Synth 8-4471] merging register 'listY_reg[4][6:0]' into 'listX_reg[4][6:0]' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+INFO: [Synth 8-4471] merging register 'listY_reg[5][6:0]' into 'listX_reg[5][6:0]' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+INFO: [Synth 8-4471] merging register 'listY_reg[6][6:0]' into 'listX_reg[7][6:0]' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+INFO: [Synth 8-4471] merging register 'listY_reg[8][6:0]' into 'listX_reg[0][6:0]' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+WARNING: [Synth 8-6014] Unused sequential element listY_reg[1] was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+WARNING: [Synth 8-6014] Unused sequential element listY_reg[2] was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+WARNING: [Synth 8-6014] Unused sequential element listY_reg[4] was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+WARNING: [Synth 8-6014] Unused sequential element listY_reg[5] was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+WARNING: [Synth 8-6014] Unused sequential element listY_reg[6] was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+WARNING: [Synth 8-6014] Unused sequential element listY_reg[8] was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'random_coor' (7#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/random_coor.v:23]
+WARNING: [Synth 8-324] index 32 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 32 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 32 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 32 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 33 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 33 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 33 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 33 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 34 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 34 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 34 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 34 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 35 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 35 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 35 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 35 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 36 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 36 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 36 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 36 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 37 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 37 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 37 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 37 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 38 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 38 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 38 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 38 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 39 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 39 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 39 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 39 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 40 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 40 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 40 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 40 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 41 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 41 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 41 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 41 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 42 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 42 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 42 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 42 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 43 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 43 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 43 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 43 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 44 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 44 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 44 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 44 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 45 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 45 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 45 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 45 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 46 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 46 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 46 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 46 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 47 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 47 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 47 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 47 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 48 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 48 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 48 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 48 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 49 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 49 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 49 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 49 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 50 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 50 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 50 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 50 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 51 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 51 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 51 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 51 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 52 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 52 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 52 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 52 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 53 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 53 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 53 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 53 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 54 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 54 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 54 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 54 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 55 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 55 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 55 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 55 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 56 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 56 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 56 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+WARNING: [Synth 8-324] index 56 out of range [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:87]
+INFO: [Common 17-14] Message 'Synth 8-324' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element found_reg was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'snake_game' (8#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_game.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
@@ -90,19 +204,36 @@ INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/mayan/OneDrive
 INFO: [Synth 8-226] default block is never used [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
 INFO: [Synth 8-226] default block is never used [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
-INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (8#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
-WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:82]
-INFO: [Synth 8-6157] synthesizing module 'display_volume' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/display_volume.v:23]
-WARNING: [Synth 8-6014] Unused sequential element COLOR_TOP_reg was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/display_volume.v:39]
-WARNING: [Synth 8-6014] Unused sequential element COLOR_MIDDLE_reg was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/display_volume.v:40]
-WARNING: [Synth 8-6014] Unused sequential element COLOR_BOTTOM_reg was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/display_volume.v:41]
-WARNING: [Synth 8-6014] Unused sequential element COLOR_BACK_reg was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/display_volume.v:42]
-INFO: [Synth 8-6155] done synthesizing module 'display_volume' (9#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/display_volume.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Display_Menu' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Display_Menu' (10#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (11#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (9#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:87]
+WARNING: [Synth 8-3848] Net volume in module/entity Top_Student does not have driver. [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:54]
+WARNING: [Synth 8-3848] Net seg in module/entity Top_Student does not have driver. [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (10#1) [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[15]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[14]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[13]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[12]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[11]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[10]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[3]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[1]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[0]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[3]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[1]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[0]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port btnU
 WARNING: [Synth 8-3331] design Top_Student has unconnected port btnD
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[15]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[14]
@@ -118,8 +249,10 @@ WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 411.414 ; gain = 154.277
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 422.047 ; gain = 165.289
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -132,10 +265,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 411.414 ; gain = 154.277
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 422.047 ; gain = 165.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 411.414 ; gain = 154.277
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 422.047 ; gain = 165.289
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -151,38 +284,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 748.191 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 763.559 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 748.191 ; gain = 491.055
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 763.559 ; gain = 506.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 748.191 ; gain = 491.055
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 763.559 ; gain = 506.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 748.191 ; gain = 491.055
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 763.559 ; gain = 506.801
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "counter_2s" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "sample" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "counter_2s" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "sample" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "volume" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "volume" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -221,9 +343,8 @@ INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because addre
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 748.191 ; gain = 491.055
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 763.559 ; gain = 506.801
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-223] decloning instance 'c1' (clk_custom) to 'c2'
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -235,42 +356,39 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-	   3 Input     32 Bit       Adders := 2     
 	   2 Input     17 Bit       Adders := 1     
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 64    
+	   2 Input      7 Bit       Adders := 4     
 	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
 +---Registers : 
 	               40 Bit    Registers := 1     
-	               32 Bit    Registers := 1     
 	               17 Bit    Registers := 1     
-	               16 Bit    Registers := 3     
-	               12 Bit    Registers := 3     
-	               11 Bit    Registers := 2     
-	                8 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                7 Bit    Registers := 78    
 	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 21    
 +---Muxes : 
 	   2 Input     40 Bit        Muxes := 3     
-	   2 Input     32 Bit        Muxes := 3     
 	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
 	  32 Input     20 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 26    
-	   5 Input     16 Bit        Muxes := 2     
-	  17 Input     16 Bit        Muxes := 1     
-	   2 Input     15 Bit        Muxes := 1     
-	   2 Input     11 Bit        Muxes := 2     
-	   6 Input     11 Bit        Muxes := 2     
-	   3 Input      8 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 8     
 	  32 Input      6 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
 	  32 Input      5 Bit        Muxes := 2     
-	  16 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 462   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -278,10 +396,6 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module Top_Student 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
 Module clk_custom 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -291,37 +405,42 @@ Detailed RTL Component Info :
 +---Registers : 
 	               12 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
-Module Volume_Indicator 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-+---Registers : 
-	               32 Bit    Registers := 1     
-	               16 Bit    Registers := 1     
-	               12 Bit    Registers := 1     
-	                8 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 21    
-	   5 Input     16 Bit        Muxes := 2     
-	   3 Input      8 Bit        Muxes := 1     
-	  16 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
 Module dff 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
-Module Volume_left_right 
+Module snake_signal 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module random_coor 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     11 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	               11 Bit    Registers := 2     
+	                7 Bit    Registers := 14    
+	                4 Bit    Registers := 1     
+Module snake_game 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 64    
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 64    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input     11 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 458   
 Module Oled_Display 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -342,24 +461,6 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit        Muxes := 2     
 	  32 Input      5 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 2     
-Module display_volume 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     32 Bit       Adders := 2     
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 3     
-	  17 Input     16 Bit        Muxes := 1     
-	   2 Input     15 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module Display_Menu 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
-	   6 Input     11 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -376,12 +477,36 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5545] ROM "counter_2s" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "sample" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element c2/new_clk_reg was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk_custom.v:31]
+WARNING: [Synth 8-6014] Unused sequential element f0/temp_reg was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:50]
+WARNING: [Synth 8-6014] Unused sequential element f0/sample_reg was removed.  [C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:54]
+INFO: [Synth 8-5546] ROM "f6/fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "f6/fsm_next_state0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[15]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[14]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[13]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[12]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[11]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[10]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[3]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[1]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port led[0]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[3]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[1]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port seg[0]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port btnU
 WARNING: [Synth 8-3331] design Top_Student has unconnected port btnD
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[15]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[14]
@@ -397,36 +522,116 @@ WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[2]
-INFO: [Synth 8-3886] merging instance 'f7/oled_data_reg[0]' (FDS) to 'f7/oled_data_reg[3]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[0]' (FDS) to 'f8/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[1]' (FDS) to 'f8/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'f7/oled_data_reg[2]' (FDS) to 'f7/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[2]' (FDS) to 'f8/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[3]' (FDS) to 'f8/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[4]' (FDS) to 'f8/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'f7/oled_data_reg[5]' (FDS) to 'f7/oled_data_reg[6]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[5]' (FDS) to 'f8/oled_data_reg[6]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[6]' (FDS) to 'f8/oled_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[7]' (FDS) to 'f8/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[8]' (FDS) to 'f8/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[9]' (FDS) to 'f8/oled_data_reg[10]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[11]' (FDS) to 'f8/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'f7/oled_data_reg[12]' (FDS) to 'f7/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[12]' (FDS) to 'f8/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[13]' (FDS) to 'f8/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'f8/oled_data_reg[14]' (FDS) to 'f8/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'f1/seg_reg[1]' (FDE) to 'f1/seg_reg[6]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\f1/seg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\f1/seg_reg[7] )
-WARNING: [Synth 8-3332] Sequential element (f1/seg_reg[7]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (f1/seg_reg[4]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (f1/level_reg[3]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (f1/level_reg[2]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (f1/level_reg[1]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (f1/level_reg[0]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (f1/volume_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[0]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port J_MIC3_Pin3
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[0]' (FD) to 'nolabel_line86/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[1]' (FD) to 'nolabel_line86/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[2]' (FD) to 'nolabel_line86/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[3]' (FD) to 'nolabel_line86/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[5]' (FD) to 'nolabel_line86/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[6]' (FD) to 'nolabel_line86/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[7]' (FD) to 'nolabel_line86/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[8]' (FD) to 'nolabel_line86/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[9]' (FD) to 'nolabel_line86/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[11]' (FD) to 'nolabel_line86/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[12]' (FD) to 'nolabel_line86/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[13]' (FD) to 'nolabel_line86/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/oled_data_reg[14]' (FD) to 'nolabel_line86/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[6][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[3][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[2][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[1][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[6][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[3][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[2][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[1][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[6][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[3][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[2][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[1][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[6][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[3][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[2][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[1][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[6][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[3][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[2][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[1][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[6][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[3][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[2][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[1][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[6][5]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[3][5]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[2][5]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[1][5]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[9][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[0][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[7][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[7][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[5][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[4][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[3][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[8][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[9][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[0][6]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[9][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[0][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[7][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[7][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[5][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[4][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[3][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[8][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[9][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[0][0]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[9][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[0][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[7][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[7][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[5][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[4][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[3][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[8][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[9][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[0][1]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[9][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[0][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[7][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[7][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[5][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[4][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[3][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[8][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[9][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[0][2]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[9][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[0][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[7][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[7][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[5][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[4][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[3][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[8][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[9][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[0][3]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[9][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[0][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[7][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[7][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[5][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[4][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listY_reg[3][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[8][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/nolabel_line42/listX_reg[9][4]' (FD) to 'nolabel_line86/nolabel_line42/listY_reg[0][4]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line86/nolabel_line42/\listX_reg[9][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line86/nolabel_line42/\listY_reg[0][5] )
+WARNING: [Synth 8-3332] Sequential element (listY_reg[0][5]) is unused and will be removed from module random_coor.
+WARNING: [Synth 8-3332] Sequential element (listX_reg[9][5]) is unused and will be removed from module random_coor.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 748.191 ; gain = 491.055
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 763.559 ; gain = 506.801
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -438,13 +643,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 748.191 ; gain = 491.055
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 763.559 ; gain = 506.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 764.945 ; gain = 507.809
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:16 . Memory (MB): peak = 775.586 ; gain = 518.828
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -455,8 +660,90 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/len_reg[7]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/len_reg[6]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/len_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/len_reg[10]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/len_reg[9]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/len_reg[8]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[0][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[1][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[0][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[1][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[2][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[2][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[3][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[3][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[4][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[4][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[5][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[5][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[6][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[6][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[7][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[7][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[8][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[8][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[9][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[9][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[10][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[10][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[11][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[11][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[12][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[12][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[13][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[13][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[14][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[14][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[15][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[15][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[16][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[16][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[17][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[17][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[18][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[18][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[19][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[19][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[20][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[20][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[21][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[21][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[22][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[22][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[23][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[23][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[24][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[24][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[25][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[25][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[26][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[26][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[27][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[27][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[28][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[28][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[29][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[29][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[30][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[30][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[31][6]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[31][5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[31][4]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[31][3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[31][2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[31][1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeY_reg[31][0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[31][6]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[31][5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[31][4]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[31][3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[31][2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[31][1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/snakeX_reg[31][0]) is unused and will be removed from module Top_Student.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 788.766 ; gain = 531.629
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 818.098 ; gain = 561.340
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -480,7 +767,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 788.766 ; gain = 531.629
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 818.098 ; gain = 561.340
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -493,7 +780,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 788.766 ; gain = 531.629
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 818.098 ; gain = 561.340
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -505,25 +792,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 788.766 ; gain = 531.629
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 818.098 ; gain = 561.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 788.766 ; gain = 531.629
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 818.098 ; gain = 561.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 788.766 ; gain = 531.629
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 818.098 ; gain = 561.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 788.766 ; gain = 531.629
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 818.098 ; gain = 561.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -540,55 +827,58 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     3|
-|2     |CARRY4 |    80|
-|3     |LUT1   |    27|
-|4     |LUT2   |   161|
-|5     |LUT3   |    84|
-|6     |LUT4   |   125|
-|7     |LUT5   |    99|
-|8     |LUT6   |   219|
-|9     |MUXF7  |     1|
-|10    |FDRE   |   280|
+|2     |CARRY4 |    52|
+|3     |LUT1   |    15|
+|4     |LUT2   |   139|
+|5     |LUT3   |    90|
+|6     |LUT4   |   127|
+|7     |LUT5   |   153|
+|8     |LUT6   |   534|
+|9     |MUXF7  |     2|
+|10    |FDRE   |   466|
 |11    |FDRE_1 |    31|
-|12    |FDSE   |    12|
+|12    |FDSE   |   131|
 |13    |FDSE_1 |     1|
-|14    |IBUF   |     7|
-|15    |OBUF   |    33|
-|16    |OBUFT  |     1|
+|14    |IBUF   |     5|
+|15    |OBUF   |     9|
+|16    |OBUFT  |    25|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+---------+-----------------------+------+
-|      |Instance |Module                 |Cells |
-+------+---------+-----------------------+------+
-|1     |top      |                       |  1164|
-|2     |  c1     |clk_custom             |    50|
-|3     |  c3     |clk_custom_0           |    50|
-|4     |  f0     |Audio_Capture          |    74|
-|5     |  f1     |Volume_Indicator       |   180|
-|6     |  f2     |single_pulse_circuit   |     6|
-|7     |    f1   |dff_6                  |     2|
-|8     |    f2   |dff_7                  |     4|
-|9     |  f3     |single_pulse_circuit_1 |     2|
-|10    |    f1   |dff_4                  |     1|
-|11    |    f2   |dff_5                  |     1|
-|12    |  f4     |single_pulse_circuit_2 |     2|
-|13    |    f1   |dff                    |     1|
-|14    |    f2   |dff_3                  |     1|
-|15    |  f5     |convert_to_coordinate  |   112|
-|16    |  f6     |Oled_Display           |   434|
-|17    |  f7     |display_volume         |    45|
-|18    |  f8     |Display_Menu           |     3|
-|19    |  f9     |Volume_left_right      |   161|
-+------+---------+-----------------------+------+
++------+-------------------+-----------------------+------+
+|      |Instance           |Module                 |Cells |
++------+-------------------+-----------------------+------+
+|1     |top                |                       |  1783|
+|2     |  c1               |clk_custom             |    51|
+|3     |  c3               |clk_custom_0           |    50|
+|4     |  c4               |clk_custom_1           |    51|
+|5     |  f0               |Audio_Capture          |    41|
+|6     |  f10              |single_pulse_circuit   |     2|
+|7     |    f1             |dff_10                 |     1|
+|8     |    f2             |dff_11                 |     1|
+|9     |  f2               |single_pulse_circuit_2 |     5|
+|10    |    f1             |dff_8                  |     2|
+|11    |    f2             |dff_9                  |     3|
+|12    |  f3               |single_pulse_circuit_3 |     3|
+|13    |    f1             |dff_6                  |     2|
+|14    |    f2             |dff_7                  |     1|
+|15    |  f4               |single_pulse_circuit_4 |     3|
+|16    |    f1             |dff                    |     2|
+|17    |    f2             |dff_5                  |     1|
+|18    |  f5               |convert_to_coordinate  |    63|
+|19    |  f6               |Oled_Display           |   602|
+|20    |  nolabel_line85   |snake_signal           |    15|
+|21    |  nolabel_line86   |snake_game             |   854|
+|22    |    nolabel_line42 |random_coor            |    41|
++------+-------------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 788.766 ; gain = 531.629
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 818.098 ; gain = 561.340
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 788.766 ; gain = 194.852
-Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 788.766 ; gain = 531.629
+Synthesis finished with 0 errors, 0 critical warnings and 130 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:09 . Memory (MB): peak = 818.098 ; gain = 219.828
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 818.098 ; gain = 561.340
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 120 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -598,11 +888,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDSE_1 => FDSE (inverted pins: C): 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-78 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+151 Infos, 283 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 788.766 ; gain = 544.484
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:22 . Memory (MB): peak = 818.098 ; gain = 574.164
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 788.766 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 23 03:13:47 2021...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 818.098 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  2 03:06:41 2021...

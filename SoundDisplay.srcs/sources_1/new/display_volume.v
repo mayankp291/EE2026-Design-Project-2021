@@ -91,5 +91,5 @@ module display_volume(
                    
         else
             oled_data = COLOR_BACK;
-    end    
+        end    
 endmodule
