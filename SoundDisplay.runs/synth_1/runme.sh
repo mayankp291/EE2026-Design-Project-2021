@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.runs/synth_1'
+HD_PWD='C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

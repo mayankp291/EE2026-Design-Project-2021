@@ -1,0 +1,983 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 12856
+License: Customer
+
+Current time: 	Fri Apr 02 01:01:20 SGT 2021
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 2752x1152
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 69 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	mayan
+User home directory: C:/Users/mayan
+User working directory: C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/mayan/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/mayan/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/mayan/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/vivado.log
+Vivado journal file location: 	C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/vivado.jou
+Engine tmp dir: 	C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/.Xil/Vivado-12856-DESKTOP-G8S3G7P
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	205 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 513 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 89 MB (+90624kb) [00:00:09]
+// [Engine Memory]: 509 MB (+382110kb) [00:00:09]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\mayan\OneDrive - National University of Singapore\Desktop\SoundDisplay\SoundDisplay.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 534 MB. GUI used memory: 40 MB. Current time: 4/2/21 1:01:22 AM SGT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 570 MB (+37593kb) [00:00:15]
+// [Engine Memory]: 599 MB (+365kb) [00:00:17]
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 803.703 ; gain = 85.270 
+// Project name: SoundDisplay; location: C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, ck)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (Top_Student.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), c1 : clk_custom (clk_custom.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Top_Student.v", 161, 338); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 180, 429); // ce (w, ck)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1727 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1775 ms. Increasing delay to 3000 ms.
+// Elapsed time: 343 seconds
+selectCodeEditor("Top_Student.v", 385, 391); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+// Elapsed time: 244 seconds
+selectCodeEditor("Top_Student.v", 310, 171); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 48, 115); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 14, 141); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 6, 226); // ce (w, ck)
+// Elapsed time: 124 seconds
+selectCodeEditor("Top_Student.v", 331, 125); // ce (w, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // aa (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V (q, ck)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V (q, ck)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+selectCodeEditor("Top_Student.v", 972, 323); // ce (w, ck)
+// Elapsed time: 206 seconds
+selectCodeEditor("Top_Student.v", 75, 278); // ce (w, ck)
+// [Engine Memory]: 630 MB (+952kb) [00:16:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 630 MB. GUI used memory: 51 MB. Current time: 4/2/21 1:17:27 AM SGT
+// Elapsed time: 96 seconds
+selectCodeEditor("Top_Student.v", 120, 333); // ce (w, ck)
+// Elapsed time: 50 seconds
+selectCodeEditor("Top_Student.v", 3, 2); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 469, 242); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 373, 245); // ce (w, ck)
+// [GUI Memory]: 96 MB (+2389kb) [00:18:57]
+selectCodeEditor("Top_Student.v", 323, 260); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 424, 240); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 426, 247); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 715, 233); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 701, 248); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 79, 412); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 448, 373); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 435, 432); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 418, 474); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 422, 411); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 409, 418); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 35, 401); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 289, 279); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 57, 242); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 65, 277); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 310, 283); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 306, 278); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 35, 400); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("Top_Student.v", 182, 391); // ce (w, ck)
+// Elapsed time: 39 seconds
+selectCodeEditor("Top_Student.v", 680, 91); // ce (w, ck)
+// [GUI Memory]: 102 MB (+1661kb) [00:21:39]
+// Elapsed time: 69 seconds
+selectCodeEditor("Top_Student.v", 430, 521); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 547, 374); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("Top_Student.v", 240, 213); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 356, 274); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 162, 278); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 730, 180); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 105, 414); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 210, 502); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 11, 136); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 164, 496); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 229, 525); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 170, 190); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("Top_Student.v", 343, 472); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 0, 284); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1, 306); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1, 293, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 129, 436); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 209, 478); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 349, 510); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 29, 412); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 271, 459); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 233, 489); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 236, 403); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// Elapsed time: 35 seconds
+selectCodeEditor("Top_Student.v", 252, 260); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 419, 366); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 706, 176); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 430, 212, false, true, false, false, false); // ce (w, ck) - Control Key
+selectCodeEditor("Top_Student.v", 430, 261, false, true, false, false, false); // ce (w, ck) - Control Key
+selectCodeEditor("Top_Student.v", 546, 196); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 409, 216); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 4, 227); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top_Student.v", 427, 463); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 421, 515); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top_Student.v", 410, 431); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 12, 230); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 241, 232); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 240, 233); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 463, 266); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 472, 245); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 449, 272); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 461, 243); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 442, 255); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 447, 245); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 228, 229); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 289, 233); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("Top_Student.v", 438, 190); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 116, 249); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 559, 234); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 530, 342); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 369, 268); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 461, 225); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 432, 242); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 415, 275); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 469, 250); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 396, 274); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 439, 260); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 242, 313); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("Top_Student.v", 727, 149); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 907, 146); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 640, 193); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("Top_Student.v", 75, 469); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("Top_Student.v", 303, 448); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 193, 454, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Top_Student.v", 1112, 27); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1060, 45); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 196, 420); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 317, 157); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 67, 413); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 466, 416); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 417, 446); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 436, 165); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("Top_Student.v", 51, 165); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 694, 288); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 83, 386); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 240, 465); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 205, 502); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 486, 458); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 465, 427); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("Top_Student.v", 25, 434); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 29, 400); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 639, 484); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 371, 483); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 161, 377); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 275, 433); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 260, 406); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("Top_Student.v", 50, 326); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 14, 346); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 513, 358); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 632, 333); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1, 71); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 354, 423); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 6, 97); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 334, 393); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 944, 493); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 840, 432); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 907, 482); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1, 117); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 718, 535); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 7, 130); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 567, 433); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 7, 244); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 375, 376); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 142, 468); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 2, 248); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("Top_Student.v", 721, 478); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 701, 374); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 335, 375); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("Top_Student.v", 883, 472); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_Student.v", 432, 457, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Top_Student.v", 11, 68); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 10, 76); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 186, 231); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1, 205); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 157, 226); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 233, 213); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 170, 474); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 201, 464); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 4, 145); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 276, 404); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 195, 242); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 17, 363); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 14, 413); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 5, 444); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 9, 434); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 2, 462); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 12, 360); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 168, 253); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1226, 194); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 37, 481); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("Top_Student.v", 554, 289); // ce (w, ck)
+// Elapsed time: 59 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_Student.v", 494, 370); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 108 MB (+1182kb) [00:35:44]
+// Elapsed time: 27 seconds
+selectCodeEditor("Top_Student.v", 568, 324); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 610, 301); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 569, 332); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 570, 375); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("Top_Student.v", 191, 270); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 130, 310); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 157, 284); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 453, 375); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), Flag_gen : Flag_gen (Flag_gen.v)]", 20, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), Flag_gen : Flag_gen (Flag_gen.v)]", 20, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), Flag_gen : Flag_gen (Flag_gen.v)]", 20, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Flag_gen.v", 180, 311); // ce (w, ck)
+selectCodeEditor("Flag_gen.v", 221, 329); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 17, 259); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 54, 263); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // aa (ck)
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.xpr"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Opening Vivado Project: C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (A, G)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 665 MB (+4166kb) [00:37:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 92 MB. Current time: 4/2/21 1:38:19 AM SGT
+// Project name: SoundDisplay(2); location: C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 868.508 ; gain = 26.219 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 122 MB (+8900kb) [00:37:12]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), c1 : clk_custom (clk_custom.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Top_Student.v", 395, 521); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 229, 335); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 209, 361); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 255, 418); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 681, 449); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 417, 350); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// Tcl Message: current_project SoundDisplay 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 701 MB (+1924kb) [00:38:00]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  2 01:39:09 2021] Launched synth_1... Run output will be captured here: C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.runs/synth_1/runme.log [Fri Apr  2 01:39:09 2021] Launched impl_1... Run output will be captured here: C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 92 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("Top_Student.v", 382, 211); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 799ms to process. Increasing delay to 2000 ms.
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1, true, false); // k (j, ck) - Popup Trigger
+selectMenuItem((HResource) null, "New Vertical Group"); // JMenuItem (JidePopupMenu)
+selectCodeEditor("Flag_gen.v", 722, 149); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), f8 : Display_Menu (Display_Menu.v)]", 29, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), f8 : Display_Menu (Display_Menu.v)]", 29, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 129 MB (+1322kb) [00:42:08]
+// Elapsed time: 116 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Flag_gen.v", 1); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Display_Menu.v", 2); // k (j, ck)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Flag_gen.v", 1); // k (j, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("Flag_gen.v", 283, 339); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("Flag_gen.v", 124, 163); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 717 MB. GUI used memory: 79 MB. Current time: 4/2/21 1:44:53 AM SGT
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183739651A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,369 MB. GUI used memory: 79 MB. Current time: 4/2/21 1:45:09 AM SGT
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,369 MB (+664252kb) [00:44:00]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Flag_gen.v", 1); // k (j, ck)
+selectCodeEditor("Flag_gen.v", 126, 349); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("Flag_gen.v", 527, 435); // ce (w, ck)
+selectCodeEditor("Flag_gen.v", 506, 474); // ce (w, ck)
+selectCodeEditor("Flag_gen.v", 480, 485); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+selectCodeEditor("Top_Student.v", 132, 261); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("Top_Student.v", 31, 402); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 41, 389); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game (snake_game.v)]", 14, true); // B (D, ck) - Node
+// Tcl Message: current_project SoundDisplay(2) 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game (snake_game.v)]", 14, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("snake_game.v", 77, 305); // ce (w, ck)
+selectCodeEditor("snake_game.v", 102, 310); // ce (w, ck)
+selectCodeEditor("snake_game.v", 101, 303); // ce (w, ck)
+selectCodeEditor("snake_game.v", 115, 312); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game.v", 2); // k (j, ck)
+selectCodeEditor("snake_game.v", 171, 323); // ce (w, ck)
+selectCodeEditor("snake_game.v", 115, 374); // ce (w, ck)
+selectCodeEditor("snake_game.v", 173, 356); // ce (w, ck)
+selectCodeEditor("snake_game.v", 197, 392); // ce (w, ck)
+selectCodeEditor("snake_game.v", 227, 392); // ce (w, ck)
+selectCodeEditor("snake_game.v", 221, 393); // ce (w, ck)
+selectCodeEditor("snake_game.v", 219, 382); // ce (w, ck)
+selectCodeEditor("snake_game.v", 151, 294); // ce (w, ck)
+selectCodeEditor("snake_game.v", 211, 340); // ce (w, ck)
+selectCodeEditor("snake_game.v", 242, 372); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_signal (snake_signal.v)]", 22, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_signal (snake_signal.v)]", 22, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("snake_signal.v", 0, 419); // ce (w, ck)
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_signal.v", 3); // k (j, ck)
+selectCodeEditor("snake_signal.v", 69, 124); // ce (w, ck)
+// Elapsed time: 69 seconds
+selectCodeEditor("snake_signal.v", 122, 355); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("snake_signal.v", 64, 397); // ce (w, ck)
+selectCodeEditor("snake_signal.v", 63, 368); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("snake_signal.v", 130, 331); // ce (w, ck)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "snake_signal.v", 'v'); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_signal.v", 3); // k (j, ck)
+selectCodeEditor("snake_signal.v", 98, 399); // ce (w, ck)
+// Elapsed time: 68 seconds
+selectCodeEditor("snake_signal.v", 329, 527); // ce (w, ck)
+selectCodeEditor("snake_signal.v", 242, 483); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("snake_signal.v", 173, 482); // ce (w, ck)
+// Elapsed time: 67 seconds
+selectCodeEditor("snake_signal.v", 80, 229); // ce (w, ck)
+selectCodeEditor("snake_signal.v", 83, 231); // ce (w, ck)
+typeControlKey((HResource) null, "snake_signal.v", 'v'); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_signal.v", 3); // k (j, ck)
+selectCodeEditor("snake_signal.v", 139, 136); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("snake_signal.v", 26, 156); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 137 MB (+963kb) [00:54:03]
+selectCodeEditor("Top_Student.v", 159, 358); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 20, 454); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 103, 393); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 201, 412); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 252, 396); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 294, 383); // ce (w, ck)
+// Elapsed time: 104 seconds
+selectCodeEditor("Top_Student.v", 215, 311); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 237, 378); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 338, 395); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 422, 382); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 463, 406); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 57, 384); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 67, 395); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 96, 382); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 83, 397); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cv' command handler elapsed time: 4 seconds
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Resetting Runs"); // bx (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  2 01:57:27 2021] Launched synth_1... Run output will be captured here: C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.runs/synth_1/runme.log [Fri Apr  2 01:57:27 2021] Launched impl_1... Run output will be captured here: C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game.v", 2); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_signal.v", 3); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_Student.v", 380, 416); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 386, 514); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 482, 458); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 580ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 194 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// HOptionPane Warning: 'Hardware Manager cannot be opened for more than one project. Please close Hardware Manager for project 'SoundDisplay' and try again. (Unable to open Hardware Manager)'
+selectButton("PAResourceOtoP.ProgramDebugTaskView_HARDWARE_MANAGER_CANNOT_BE_OPENED_OK", "OK"); // JButton (A, G)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183739651A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplayV1.1.xpr/SoundDisplay/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 158 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game.v", 1); // k (j, ck)
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_signal.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game.v", 1); // k (j, ck)
+// Elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 16 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "hungry_worm"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 18 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "worm_signal_decode"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; worm_signal_decode.v ; xil_defaultlib ; <Local to Project>", 1, "worm_signal_decode.v", 2); // bP (O, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; worm_signal_decode.v ; xil_defaultlib ; <Local to Project>", 1, "worm_signal_decode.v", 2, false, false, false, true, false); // bP (O, c) - Popup Trigger
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; worm_signal_decode.v ; xil_defaultlib ; <Local to Project>", 1, "worm_signal_decode.v", 2, false, false, false, true, false); // bP (O, c) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // aa (aj, c)
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // aa (aj, c)
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // aa (aj, c)
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // aa (aj, c)
+// Elapsed time: 11 seconds
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // aa (aj, c)
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // aa (aj, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CHANGE_SOURCE_PROPERTIES, "Change Source Properties..."); // ad (aj, c)
+// bg (c): Configure Sources: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bg)
+dismissDialog("Configure Sources"); // bg (c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; hungry_worm.v ; xil_defaultlib ; <Local to Project>", 0, "hungry_worm.v", 2); // bP (O, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; worm_signal_decode.v ; xil_defaultlib ; <Local to Project>", 1, "worm_signal_decode.v", 2); // bP (O, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; worm_signal_decode.v ; xil_defaultlib ; <Local to Project>", 1, "worm_signal_decode.v", 2, false, false, false, false, true); // bP (O, c) - Double Click
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; worm_signal_decode.v ; xil_defaultlib ; <Local to Project>", 1, "worm_signal_decode.v", 2); // bP (O, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; worm_signal_decode.v ; xil_defaultlib ; <Local to Project>", 1, "worm_signal_decode.v", 2); // bP (O, c)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "worm_controls"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 89 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: current_project SoundDisplay 
+// bx (ck):  Add Sources  : addNotify
+// Tcl Message: close [ open {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/worm_controls.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/worm_controls.v}} 
+// Tcl Message: close [ open {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/hungry_worm.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/hungry_worm.v}} 
+// I (ck): Define Modules: addNotify
+dismissDialog("Add Sources"); // bx (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Modules"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, worm_controls (worm_controls.v)]", 34, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_display (clock_display.v)]", 33, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, worm_controls (worm_controls.v)]", 34, false); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, hungry_worm.v]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, worm_controls (worm_controls.v)]", 35, false); // B (D, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/worm_controls.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// aE (ck): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: remove_files  {{C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/worm_controls.v}} 
+dismissDialog("Remove Sources"); // bx (aE)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, hungry_worm.v]", 2, false); // B (D, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/hungry_worm.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// aE (ck): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: remove_files  {{C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/hungry_worm.v}} 
+dismissDialog("Remove Sources"); // bx (aE)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "hungry_worm"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HOptionPane Warning: ''hungry_worm.v' already exists. Please enter another name. (Create Source File)'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HOptionPane Warning: ''hungry_worm.v' already exists. Please enter another name. (Create Source File)'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c (ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Text]", 33); // B (D, ck)
+// Elapsed time: 27 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "hungry_worm"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/hungry_worm.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/hungry_worm.v}} 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "worm_controls"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open {C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/worm_controls.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/mayan/OneDrive - National University of Singapore/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/worm_controls.v}} 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hungry_worm (hungry_worm.v)]", 33, false); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hungry_worm (hungry_worm.v)]", 33, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 145 MB (+1140kb) [01:08:18]
+// Elapsed time: 12 seconds
+selectCodeEditor("snake_game.v", 81, 531); // ce (w, ck)
+selectCodeEditor("snake_game.v", 171, 279); // ce (w, ck)
+selectCodeEditor("snake_game.v", 139, 364); // ce (w, ck)
+selectCodeEditor("snake_game.v", 91, 544); // ce (w, ck)
+typeControlKey((HResource) null, "snake_game.v", 'c'); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 95, 442); // ce (w, ck)
+typeControlKey((HResource) null, "hungry_worm.v", 'v'); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 95, 452); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("hungry_worm.v", 1, 296); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("hungry_worm.v", 118, 341); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 150, 327); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 102, 325); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 108, 323); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 118, 539); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 344, 436); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 531, 418); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 37, 497); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 367, 316); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 172, 179); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 173, 199); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 303, 200); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 495, 194); // ce (w, ck)
+selectCodeEditor("hungry_worm.v", 430, 280); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectCodeEditor("snake_game.v", 845, 344); // ce (w, ck)
+// PAResourceOtoP.PAViews_HARDWARE: Hardware: close view

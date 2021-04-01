@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Fri Apr  2 03:07:41 2021
+| Date         : Fri Apr  2 04:00:23 2021
 | Host         : DESKTOP-G8S3G7P running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
 | Design       : Top_Student
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    14 |
-| Unused register locations in slices containing registers |    22 |
+| Number of unique control sets                            |    45 |
+| Unused register locations in slices containing registers |    80 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,9 +34,12 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      2 |            1 |
-|      8 |            2 |
-|    16+ |           11 |
+|      2 |            2 |
+|      8 |            5 |
+|     10 |            1 |
+|     12 |            2 |
+|     14 |            1 |
+|    16+ |           34 |
 +--------+--------------+
 
 
@@ -46,35 +49,66 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              86 |           24 |
+| No           | No                    | No                     |             388 |          101 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             340 |           48 |
-| Yes          | No                    | No                     |               8 |            1 |
+| No           | Yes                   | No                     |             532 |           71 |
+| Yes          | No                    | No                     |             436 |           93 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             824 |          136 |
+| Yes          | Yes                   | No                     |            1068 |          199 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------+---------------------------------+-----------------------------------+------------------+----------------+
-|     Clock Signal     |          Enable Signal          |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
-+----------------------+---------------------------------+-----------------------------------+------------------+----------------+
-| ~clk6p25m_BUFG       |                                 |                                   |                1 |              2 |
-|  clk20hz_BUFG        | nolabel_line85/E[0]             |                                   |                1 |              8 |
-|  CLK100MHZ_IBUF_BUFG |                                 |                                   |                4 |              8 |
-|  clk6p25m_BUFG       |                                 |                                   |                5 |             20 |
-|  CLK100MHZ_IBUF_BUFG |                                 | c3/J_MIC3_Pin1_OBUF               |                3 |             24 |
-| ~clk6p25m_BUFG       |                                 | f2/f1/btnC_press                  |                4 |             34 |
-| ~clk6p25m_BUFG       | f6/delay[0]_i_1_n_0             | f2/f1/btnC_press                  |                5 |             40 |
-|  clk20hz_BUFG        |                                 |                                   |               14 |             56 |
-| ~clk6p25m_BUFG       | f6/FSM_onehot_state[31]_i_2_n_0 | f2/f1/btnC_press                  |                8 |             64 |
-|  CLK100MHZ_IBUF_BUFG |                                 | c3/count[0]_i_1_n_0               |                8 |             64 |
-|  CLK100MHZ_IBUF_BUFG |                                 | c4/count[0]_i_1__0_n_0            |                8 |             64 |
-|  CLK100MHZ_IBUF_BUFG |                                 | c1/clear                          |                8 |             64 |
-| ~clk6p25m_BUFG       |                                 | f2/f2/spi_word_bit_count_reg[5]_0 |               17 |             90 |
-|  clk20hz_BUFG        | nolabel_line86/p_0_in           | nolabel_line85/K                  |              123 |            720 |
-+----------------------+---------------------------------+-----------------------------------+------------------+----------------+
++---------------------------+----------------------------------------+----------------------------------------+------------------+----------------+
+|        Clock Signal       |              Enable Signal             |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++---------------------------+----------------------------------------+----------------------------------------+------------------+----------------+
+|  nolabel_line100/Left_reg |                                        |                                        |                1 |              2 |
+| ~clk6p25m_BUFG            |                                        |                                        |                1 |              2 |
+|  juggle_speed_BUFG        | f11/balltwoy[4]_i_2_n_0                | f11/balltwoy[4]_i_1_n_0                |                4 |              8 |
+|  juggle_speed_BUFG        | f11/balltwox[5]_i_2_n_0                | f11/balltwox[5]_i_1_n_0                |                3 |              8 |
+|  juggle_speed_BUFG        | f11/balloney[4]_i_2_n_0                | f11/balloney[4]_i_1_n_0                |                4 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG    | f1/seg1                                | f1/seg2_2[5]_i_1_n_0                   |                2 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG    | nolabel_line100/an_reg[3][0]           | nolabel_line100/SR[0]                  |                1 |              8 |
+|  juggle_speed_BUFG        | f11/ballonex[6]_i_2_n_0                | f11/ballonex[6]_i_1_n_0                |                4 |             10 |
+|  CLK10HZ/clk10hz          |                                        |                                        |                6 |             12 |
+|  CLK15HZ/clk15hz          |                                        |                                        |                5 |             12 |
+|  CLK100MHZ_IBUF_BUFG      |                                        |                                        |                6 |             14 |
+|  J_MIC3_Pin1_OBUF_BUFG    | f1/seg1                                |                                        |                3 |             16 |
+|  J_MIC3_Pin1_OBUF_BUFG    | f1/seg[7]_i_1_n_0                      |                                        |                4 |             16 |
+|  clk6p25m_BUFG            | nolabel_line100/snakeY_reg[0][1][0]    | f6/SS[0]                               |                7 |             20 |
+|  clk6p25m_BUFG            | nolabel_line100/oled_data_reg[15]_2[0] | nolabel_line100/oled_data_reg[15]_1[0] |                8 |             20 |
+|  clk381hz_BUFG            | nolabel_line100/btnR_count_reg[10][0]  |                                        |                2 |             22 |
+|  clk381hz_BUFG            | nolabel_line100/btnL_count_reg[10][0]  |                                        |                3 |             22 |
+|  clock_selector__0        |                                        |                                        |                4 |             22 |
+| ~f0/J_MIC3_Pin4_OBUF      |                                        |                                        |                3 |             24 |
+|  CLK100MHZ_IBUF_BUFG      |                                        | J_MIC3_Pin1_OBUF_BUFG                  |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG    | nolabel_line100/sample_reg[5][0]       | nolabel_line100/sample0                |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG    | f0/E[0]                                | nolabel_line100/sample_reg[11][0]      |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG    | nolabel_line100/E[0]                   | f1/seg1                                |                3 |             24 |
+|  clk6p25m_BUFG            |                                        |                                        |               10 |             28 |
+|  clk381hz_BUFG            |                                        |                                        |                6 |             30 |
+| ~clk6p25m_BUFG            |                                        | f6/frame_counter[16]_i_1_n_0           |                4 |             34 |
+|  clock_selector__0        | nolabel_line100/snakeY_reg[0][1][0]    |                                        |                9 |             36 |
+| ~clk6p25m_BUFG            | f6/delay[0]_i_1_n_0                    |                                        |                5 |             40 |
+|  juggle_speed_BUFG        |                                        |                                        |               18 |             48 |
+|  clock_selector__0        | nolabel_line112/CONTROLS/list_reg[58]  |                                        |               10 |             54 |
+|  J_MIC3_Pin1_OBUF_BUFG    | nolabel_line100/freq2p5_reg[31]_1      | nolabel_line100/sample0                |                8 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG    | nolabel_line100/freq2p5_reg[31]        | f1/freq2p5[31]_i_1__0_n_0              |                8 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG    | nolabel_line100/freq2p5_reg[1]         | f15/freq2p5[31]_i_1_n_0                |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG      |                                        | c4/count[0]_i_1__4_n_0                 |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG      |                                        | CLK6P25M/count[0]_i_1__3_n_0           |                8 |             64 |
+| ~clk6p25m_BUFG            | f6/state                               |                                        |                9 |             64 |
+|  CLK100MHZ_IBUF_BUFG      |                                        | CLK10HZ/clear                          |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG      |                                        | CLK5HZ/count[0]_i_1__2_n_0             |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG      |                                        | CLK381HZ/count[0]_i_1_n_0              |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG      |                                        | CLK15HZ/count[0]_i_1__1_n_0            |                8 |             64 |
+|  J_MIC3_Pin1_OBUF_BUFG    |                                        |                                        |               16 |             86 |
+| ~clk6p25m_BUFG            |                                        | f6/spi_word[39]_i_1_n_0                |               16 |             90 |
+|  background_speed_BUFG    |                                        |                                        |               25 |            108 |
+|  juggle_speed_BUFG        | nolabel_line100/freq2p5_reg[1]         |                                        |               52 |            192 |
+|  clock_selector__0        | nolabel_line100/snakeX_reg[30][1][0]   | nolabel_line100/SS[0]                  |              133 |            720 |
++---------------------------+----------------------------------------+----------------------------------------+------------------+----------------+
 
 

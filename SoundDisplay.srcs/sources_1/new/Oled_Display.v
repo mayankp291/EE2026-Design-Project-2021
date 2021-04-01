@@ -102,7 +102,7 @@ localparam SetColAddress = 5'b10010;
 localparam SetRowAddress = 5'b10011;
 localparam WaitNextFrame = 5'b10001;
 localparam SendPixel = 5'b10000;
-
+reg [StateWidth-1:0] state;
 assign sending_pixels = state == SendPixel;
 
 assign resn = state != Reset;
@@ -113,8 +113,8 @@ assign vccen = state == VccEn || state == DisplayOn ||
 assign pmoden = !reset;
 
 reg [15:0] color;
+//original state declaration here
 
-reg [StateWidth-1:0] state;
 wire [StateWidth-1:0] next_state = fsm_next_state(state, frame_begin, pixel_index);
 
 function [StateWidth-1:0] fsm_next_state;
